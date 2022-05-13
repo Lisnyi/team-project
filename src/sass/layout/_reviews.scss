@@ -2,7 +2,7 @@
     background-color: var(--white-color);
 }
 
-.reviews__conteiner {
+.reviews__container {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
@@ -17,14 +17,17 @@
 }
 
 .reviews-section__foto {
-    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     width: 90px;
     height: 90px;
     margin-bottom: 24px;
 }
 
 .reviews__social-link {
-    
+    display: inline-block;
+    line-height: 0;
+    margin-bottom: 24px;
 }
 
 .reviews__logo {
@@ -34,17 +37,33 @@
 }
 
 .response {
-
+    padding: 0 25px;
 }
 
 .response__writer {
-
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--accent-color);
+    margin-bottom: 16px;
 }
 
 .response__education {
-    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
 }
 
 .response__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    color: var(--additional-text-color);
+}
 
+.response_span {
+    color: var(--accent-color);
+    text-decoration: underline;
 }
