@@ -32,17 +32,18 @@ color: #111518;
 &:before{
     display: inline-flex;
     content: " ";
-    width: 30px;
-    height: 30px;
+    width: 17px;
+    height: 14px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 }
 
 .teacher__advantages{
-    // &:before{
-    //     margin-right: 9px;
-    //     background-image: url("/src/images/about/Vector.svg");
-    // }
+    &:before{
+        margin-right: 9px;
+        background-image: url("../images/about/Vector.svg");
+    }
 font-weight: 600;
 line-height: 1.2;
 letter-spacing: 0.06em;
