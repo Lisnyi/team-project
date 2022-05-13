@@ -1,4 +1,4 @@
-.problems .container{
+.problems{
     background-image: linear-gradient(to bottom,
         var(--main-black-color) 73.5%,
         var(--white-color) 26.5%);
@@ -31,8 +31,6 @@
 
 .problems__item{
     font-family: inherit;
-    font-weight: 700;
-    font-size: 14px;
     line-height: 1.71;
     color: var(--main-black-color);
     display: flex;

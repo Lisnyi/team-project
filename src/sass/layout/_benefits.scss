@@ -1,4 +1,4 @@
-.benefits .container {
+.benefits {
     background-image: linear-gradient(to bottom,
             var(--main-black-color) 59.8%,
             var(--white-color) 40.2%);
@@ -26,8 +26,6 @@
 
 .benefits__item{
     font-family: inherit;
-    font-weight: 700;
-    font-size: 14px;
     display: flex;
     flex-direction: column;
     line-height: 1.43;
