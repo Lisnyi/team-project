@@ -4,6 +4,13 @@
 
 .header-container {
 	display: flex;
+	padding: 20px 0;
+	@media screen and (min-width: 768px) {
+		padding: 40px 0;
+	}
+	@media screen and (min-width: 1680px) {
+		align-items: center;
+	}
 }
 
 .menu-button {
@@ -20,6 +27,9 @@
 	@media (max-width: 767px) {
 		margin-bottom: 40px;
 	}
+	@media screen and (min-width: 1680px) {
+		margin-right: 40px;
+	}
 }
 
 .nav-list {
@@ -33,12 +43,14 @@
 		margin-bottom: 15px;
 		@media screen and (min-width: 1680px) {
 			margin-bottom: 0;
+			margin-right: 40px;
 		}
 	}
 }
 
 .nav-list__item {
 	display: block;
+	font-weight: 700;
 	font-size: 20px;
 	color: var(--white-color);
 	transition: color, 250ms linear;
@@ -52,6 +64,7 @@
 	@media screen and (min-width: 1680px) {
 		color: var(--secondary-text-color);
 		font-size: 14px;
+		padding: 20px 0;
 	}
 }
 
@@ -59,6 +72,7 @@
 	margin: 0 auto;
 	color: var(--accent-color);
 	text-transform: uppercase;
+	font-weight: 700;
 	font-size: 12px;
 	width: 280px;
 	height: 50px;
@@ -72,8 +86,10 @@
 		color: var(--white-color);
 		background-color: var(--accent-color);
 	}
-	@media screen and (min-width: 768px) {
-		display: none;
+	@media screen and (min-width: 1680px) {
+		height: 70px;
+		width: 336px;
+		font-size: 14px;
 	}
 }
 
@@ -110,6 +126,10 @@
 	@media (max-width: 767px) {
 		max-width: 480px;
 	}
+	@media screen and (min-width: 1680px) {
+		display: flex;
+		align-items: center;
+	}
 }
 
 .menu-logo {
@@ -127,7 +147,27 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	background-color: rgba(28, 28, 28, 0);
 	@media screen and (min-width: 1680px) {
 		display: none;
+	}
+}
+
+.icon-cross {
+	width: 21px;
+	height: 12px;
+}
+
+.icon-menu {
+	width: 16px;
+	height: 16px;
+}
+
+.logo-icon {
+	width: 22px;
+	height: 30px;
+	@media screen and (max-width: 767px) {
+		width: 14px;
+		height: 20px;
 	}
 }
