@@ -18,6 +18,39 @@
     }
 }
 
+// 768px - 1679px 
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+    .advanteges__container {
+        padding: 0 32px;
+        max-width: 768px;
+    }
+
+    .advanteges__section {
+        padding-bottom: 80px;
+    }
+
+    .advanteges__list {
+        padding: 0 8px;
+    }
+
+    .advanteges__item {
+        flex-basis: calc((100% - 40px) / 3);
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+        &:not(:first-child) {
+            padding-right: 30px;
+        }
+    }
+}
+
+// 768px +
+@media screen and (min-width: 768px) {
+    .advanteges__list {
+        display: flex;
+    }
+}
+
 // - 1679px
 @media screen and (max-width: 1679px) {
     .advanteges__item {
