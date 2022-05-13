@@ -64,6 +64,14 @@
 }
 
 .response_span {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: var(--white-color);
     color: var(--accent-color);
     text-decoration: underline;
+}
+
+.cont {
+    display: none;
 }
