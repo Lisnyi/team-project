@@ -1,0 +1,40 @@
+.problems .container{
+    background-image: linear-gradient(to bottom,
+        var(--main-black-color) 73.5%,
+        var(--white-color) 26.5%);
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+.problems__list{
+    background-color: white;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding: 20px 12px 24px 32px;
+}
+
+.problems__title{
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    padding-bottom: 24px;
+}
+.problems__title-span{
+    color: var(--accent-color);
+}
+
+.problems__item{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+    color: var(--main-black-color);
+
+    &:not(:last-child){
+        padding-bottom: 16px;
+    }
+}
