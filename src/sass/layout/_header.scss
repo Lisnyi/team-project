@@ -10,6 +10,36 @@
 	background: var(--white-color);
 }
 
+.header-nav {
+	margin-bottom: 40px;
+}
+
+.nav-list__li {
+	&:not(:last-child) {
+		margin-bottom: 15px;
+	}
+}
+
+.nav-list__item {
+	display: block;
+	font-size: 20px;
+	color: var(--white-color);
+	&:hover,
+	:focus {
+		color: var(--accent-color);
+	}
+}
+
+.consultation {
+	margin: 0 auto;
+	color: var(--accent-color);
+	text-transform: uppercase;
+	font-size: 12px;
+	width: 280px;
+	height: 50px;
+	border: 2px solid var(--accent-color);
+}
+
 /*----------mobile-menu----------*/
 
 .menu-container {
@@ -34,6 +64,12 @@
 	padding: 0 20px;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+}
+
+.menu-logo {
+	color: var(--white-color);
+	margin-bottom: 20px;
 }
 
 .menu-mobile__button {
