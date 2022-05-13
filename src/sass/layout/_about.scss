@@ -23,6 +23,7 @@ color: #111518;
 }
 
 .teacher-advantages__container{
+    margin-bottom: 15px;
     padding-top: 20px;
     border-top: 1px solid #B9B9B9;
     border-top-width: 100%;
@@ -56,6 +57,13 @@ color: #111518;
 }
 }
 
+.teacher-desription__symbol{
+font-weight: 700;
+font-size: 20px;
+line-height: 1.65;
+letter-spacing: 0.08em;
+color: #FF6B09;
+}
 
 .teacher-desription__text{
 margin-bottom: 8px;
@@ -65,10 +73,11 @@ line-height: 1.6;
 color: #B9B9B9;
 }
 
-.teacher__link{
+.teacher-desription__link{
 font-weight: 500;
 font-size: 12px;
 line-height: 1.6;
 text-decoration-line: underline;
 color: #FF6B09;
 }
+
