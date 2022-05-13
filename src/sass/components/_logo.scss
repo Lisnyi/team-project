@@ -2,6 +2,9 @@
 	color: var(--main-black-color);
 	padding: 20px 0;
 	font-size: 18px;
+	@media screen and (min-width: 768px) {
+		font-size: 26px;
+	}
 }
 
 .logo-header {
@@ -14,4 +17,7 @@
 
 .logo-under {
 	font-size: 5px;
+	@media screen and (min-width: 768px) {
+		font-size: 8px;
+	}
 }
