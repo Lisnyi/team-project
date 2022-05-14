@@ -1,0 +1,42 @@
+.benefits {
+    background-image: linear-gradient(to bottom,
+            var(--main-black-color) 59.8%,
+            var(--white-color) 40.2%);
+    padding-bottom: 40px;
+}
+.benefits{
+    counter-reset: item-counter;
+}
+
+.benefits__list {
+    background-color: white;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding: 20px 24px 20px 20px;
+}
+
+.benefits__title{
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.27;
+    letter-spacing: 0.03em; 
+    color: var(--white-color);
+    padding-bottom: 32px;
+}
+
+.benefits__item{
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.43;
+    color: var(--main-black-color);
+    &:not(:last-child){
+        margin-bottom: 40px;
+    }
+    counter-increment: item-counter;
+    &::before{
+        content: "— " counter(item-counter);
+        color: var(--accent-color);
+        margin-bottom: 8px;
+    }
+}

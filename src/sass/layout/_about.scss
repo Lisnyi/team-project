@@ -1,0 +1,80 @@
+.about-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--white-color);
+}
+
+.about__title{
+margin-bottom: 20px;
+font-weight: 800;
+font-size: 20px;
+line-height: 1.3;
+letter-spacing: 0.03em;
+color: var(--main-black-color);
+}
+
+.teacher__title{
+margin-bottom: 8px;
+font-weight: 800;
+font-size: 20px;
+line-height: 1.2;
+color: var(--main-black-color);
+}
+
+.teacher-advantages__container{
+    margin-bottom: 15px;
+    padding-top: 20px;
+    border-top: 1px solid var(--secondary-text-color);
+    border-top-width: 100%;
+}
+
+.teacher__advantages{
+&:before{
+    display: inline-flex;
+    content: " ";
+    width: 17px;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+}
+
+.teacher__advantages{
+    &:before{
+        margin-right: 9px;
+        background-image: url("../images/about/Vector.svg");
+    }
+font-weight: 600;
+line-height: 1.2;
+letter-spacing: 0.06em;
+color: #111518;
+}
+
+.teacher__advantages + .teacher__advantages{
+&:not(:first-child){
+    margin-top: 7px;
+}
+}
+
+.teacher-desription__symbol{
+font-size: 20px;
+line-height: 1.65;
+color: var(--accent-color);
+}
+
+.teacher-desription__text{
+margin-bottom: 8px;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.6;
+color: var(--secondary-text-color);
+}
+
+.teacher-desription__link{
+font-weight: 500;
+font-size: 12px;
+line-height: 1.6;
+text-decoration-line: underline;
+color: var(--accent-color);
+}
+
