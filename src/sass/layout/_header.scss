@@ -1,0 +1,37 @@
+.header {
+	background-color: var(--white-color);
+	position: relative;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	@media screen and (min-width: 1680px) {
+		align-items: center;
+	}
+}
+
+.menu-button {
+	background: var(--white-color);
+	@media screen and (min-width: 1680px) {
+		display: none;
+	}
+}
+
+.icon-menu {
+	width: 16px;
+	height: 16px;
+	&:hover,
+	:focus {
+		fill: var(--accent-color);
+	}
+}
+
+.logo-icon {
+	width: 22px;
+	height: 30px;
+	@media screen and (max-width: 767px) {
+		width: 14px;
+		height: 20px;
+	}
+}
