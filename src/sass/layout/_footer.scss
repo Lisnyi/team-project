@@ -14,10 +14,8 @@
 }
 
 .footer-logo {
-	display: block;
 	@media screen and (max-width: 767px) {
 		margin-bottom: 20px;
-		display: block;
 	}
 	@media screen and (min-width: 768px) {
 		margin-right: auto;
@@ -29,7 +27,7 @@
 	&::before {
 		content: "";
 		display: inline-flex;
-		background-image: url("../images/sprite.svg#tel");
+		background-image: url("../images/footer/Group.svg");
 		width: 20px;
 		height: 19px;
 		background-size: contain;
