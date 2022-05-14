@@ -1,0 +1,208 @@
+.program__container {
+    padding: 0 20px;
+    max-width: 480px;
+}
+
+.program__section {
+    width: 100%;
+    padding-top: 40px;
+    
+    padding-bottom: 145px;
+    background-color: var(--main-black-color);
+}
+
+.semester-list {
+    position: relative;
+    padding-left: 68px;
+
+&::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 40.5px;
+    top: 10px;
+    float: left;
+    height: 1330px;
+    width: 1px;
+    background-color: var(--white-color);
+}
+}
+
+.semester-list__item {
+    width: 100%;
+    max-width: 320px;  
+    margin-bottom: 40px;
+}
+
+.program__title {
+    margin-bottom: 40px;
+    color: var(--white-color);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.semester-list__name {
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--white-color);
+    line-height: 2;
+    text-transform: uppercase;
+
+&::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -33px;
+    top: 9px;
+    float: left;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+}
+
+.skills__item {
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    font-size: 12px;
+    line-height: 1.649;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -15px;
+        bottom: 10px;
+        float: left;
+        height: 1px;
+        width: 11px;
+        background-color: var(--accent-color);
+    }
+}
+
+.theme-list__item {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.667;
+    opacity: 0.5;
+}
+
+.theme-list:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.semester-list__item:last-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: -35px;
+    right: -20px;
+    height: 137px;
+    width: 176px;
+    background-image: url("../images/program/program_mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/program/program_mobile@2x.png");
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills__wrapper {
+    margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .program__container {
+        padding: 0 32px;
+        max-width: 768px;
+        // border: 1px solid red;
+    }
+    
+    .program__section {
+    padding-top: 60px;
+    padding-bottom: 180px;
+    }
+
+    .program__title {
+    margin-bottom: 48px;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: left;
+    }
+
+    .semester-list {
+    padding-left: 184px;
+
+    &::before {
+        left: 80px;
+        height: 870px;
+        }
+    }
+
+.skills {
+    display: flex;
+}
+
+.skills__wrapper {
+    margin-right: 34px;
+}
+
+.theme-list__item {
+    width: 160px;
+}
+
+.semester-list__item:last-child {
+    .theme-list {
+    padding-top: 15px;
+}
+
+&::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: -185px;
+    right: -33px;
+    height: 268px;
+    width: 368px;
+    background-image: url("../images/program/program_tablet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/program/program_tablet@2x.png");
+    }
+}
+}
+
+.semester-list__name {
+    margin-bottom: 23px;
+
+    &::before {
+        left: -110px;
+    }
+}
+
+.skills__item {
+    margin-bottom: 20px;
+
+    &::before {
+        top: 9px;
+    }
+}
+}
