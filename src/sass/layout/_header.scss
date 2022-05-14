@@ -171,6 +171,10 @@
 .icon-menu {
 	width: 16px;
 	height: 16px;
+	&:hover,
+	:focus {
+		fill: var(--accent-color);
+	}
 }
 
 .logo-icon {
