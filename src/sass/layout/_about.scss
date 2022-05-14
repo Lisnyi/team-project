@@ -1,10 +1,9 @@
 .about-section{
-    padding-top: 40px;
     padding-bottom: 40px;
     background-color: var(--white-color);
 }
 
-.about__title{
+.teacher__title{
 margin-bottom: 20px;
 font-weight: 800;
 font-size: 20px;
@@ -13,7 +12,11 @@ letter-spacing: 0.03em;
 color: var(--main-black-color);
 }
 
-.teacher__title{
+.teacher__box{
+    margin-bottom: 20px;
+}
+
+.teacher__name{
 margin-bottom: 8px;
 font-weight: 800;
 font-size: 20px;
@@ -35,14 +38,12 @@ color: var(--main-black-color);
     height: 14px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-right: 9px;
+    background-image: url("../images/about/Vector.svg");
 }
 }
 
 .teacher__advantages{
-    &:before{
-        margin-right: 9px;
-        background-image: url("../images/about/Vector.svg");
-    }
 font-weight: 600;
 line-height: 1.2;
 letter-spacing: 0.06em;
