@@ -1,0 +1,27 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,CAAC;EAEL,aAAa,CAAA,mBAAC;EACd,kBAAkB,CAAA,gBAAC;EACnB,uBAAuB,CAAA,mBAAC;EACxB,4BAA4B,CAAA,mBAAC;EAC7B,cAAc,CAAA,iBAAC;EACf,sBAAsB,CAAA,mBAAC;EACvB,uBAAuB,CAAA,gBAAC;CACxB;;ACTD,AAAA,IAAI,CAAC;EACJ,WAAW,EAAE,wBAAwB;EACrC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,uBAAuB;EAC9B,gBAAgB,EAAE,4BAA4B;CAC9C;;AAED,AAAA,GAAG,CAAC;EACH,OAAO,EAAE,KAAK;CACd;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACD,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,GAAG;CAClB;;AAED,AAAA,EAAE;AACF,EAAE,CAAC;EACF,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,IAAI;CAChB;;AAED,AAAA,CAAC,CAAC;EACD,eAAe,EAAE,IAAI;CACrB;;AAED,AAAA,UAAU,CAAC;EACV,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,MAAM;CAKd;;AAHA,MAAM,EAAE,SAAS,EAAE,KAAK;EAJzB,AAAA,UAAU,CAAC;IAKT,SAAS,EAAE,KAAK;GAEjB;;;AAED,AAAA,gBAAgB,CAAC;EAChB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,IAAI,EAAE,aAAa;EACnB,QAAQ,EAAE,MAAM;CAChB;;ACnDD,AAAA,KAAK,CAAC;EACL,KAAK,EAAE,uBAAuB;CAC9B;;AAED,AAAA,YAAY,CAAC;EACZ,YAAY,EAAE,IAAI;CAClB;;AAED,AAAA,WAAW,CAAC;EACX,KAAK,EAAE,mBAAmB;CAC1B;;AAED,AAAA,WAAW,CAAC;EACX,SAAS,EAAE,GAAG;CACd;;AIdD,AAAA,OAAO,CAAC;EACP,gBAAgB,EAAE,kBAAkB;CACpC;;AAED,AAAA,iBAAiB,CAAC;EACjB,OAAO,EAAE,IAAI;CACb;;AAED,mCAAmC;AAEnC,AAAA,eAAe,CAAC;EACf,QAAQ,EAAE,KAAK;EACf,IAAI,EAAE,CAAC;EACP,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,qBAAqB;EAIjC,UAAU,EAAE,oBAAoB;CAChC;;AAbD,AASC,eATc,AASb,QAAQ,CAAC;EACT,OAAO,EAAE,IAAI;CACb;;AAIF,AAAA,YAAY,CAAC;EACZ,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,CAAC;EACP,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,MAAM;EACf,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;CACb;;AAED,AAAA,oBAAoB,CAAC;EACpB,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,IAAI;EACT,KAAK,EAAE,IAAI;CACX",
+    "sources": [
+        "../src/sass/main.scss",
+        "../src/sass/utils/_variables.scss",
+        "../src/sass/base/_common.scss",
+        "../src/sass/components/_logo.scss",
+        "../src/sass/components/_navigation.scss",
+        "../src/sass/components/_main-button.scss",
+        "../src/sass/components/_modal.scss",
+        "../src/sass/layout/_header.scss",
+        "../src/sass/layout/_hero.scss",
+        "../src/sass/layout/_advantages.scss",
+        "../src/sass/layout/_problems.scss",
+        "../src/sass/layout/_how-we-do.scss",
+        "../src/sass/layout/_program.scss",
+        "../src/sass/layout/_benefits.scss",
+        "../src/sass/layout/_about.scss",
+        "../src/sass/layout/_guarantee.scss",
+        "../src/sass/layout/_reviews.scss",
+        "../src/sass/layout/_contacts.scss",
+        "../src/sass/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -1,0 +1,19 @@
+.logo {
+	color: var(--main-black-color);
+	font-size: 18px;
+	font-weight: 700;
+	@media screen and (min-width: 768px) {
+		font-size: 26px;
+	}
+}
+
+.under-span {
+	color: var(--accent-color);
+}
+
+.logo-under {
+	font-size: 5px;
+	@media screen and (min-width: 768px) {
+		font-size: 8px;
+	}
+}
