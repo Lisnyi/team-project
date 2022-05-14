@@ -148,29 +148,6 @@
 	}
 }
 
-.logo-header {
-	margin-right: auto;
-	padding: 20px 0;
-	@media screen and (min-width: 768px) {
-		padding: 40px 0;
-	}
-}
-
-.menu-logo {
-	color: var(--white-color);
-	margin-bottom: 20px;
-	padding-top: 40px;
-	@media screen and (max-width: 768px) {
-		padding: 20px 0;
-	}
-	@media (min-width: 768px) and (max-width: 1679px) {
-		margin-bottom: 80px;
-	}
-	@media screen and (min-width: 1680px) {
-		display: none;
-	}
-}
-
 .menu-mobile__button {
 	position: absolute;
 	top: 20px;
