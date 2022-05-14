@@ -1,0 +1,48 @@
+.problems{
+    background-image: linear-gradient(to bottom,
+        var(--main-black-color) 73.5%,
+        var(--white-color) 26.5%);
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+
+.problems{
+    counter-reset: item-counter;
+}
+
+.problems__list{
+    background-color: white;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding: 20px 12px 24px 32px;
+}
+
+.problems__title{
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    padding-bottom: 24px;
+}
+.problems__title-span{
+    color: var(--accent-color);
+}
+
+.problems__item{
+    font-family: inherit;
+    line-height: 1.71;
+    color: var(--main-black-color);
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child){
+        margin-bottom: 16px;
+    }
+    counter-increment: item-counter;
+    
+    &::before {
+        content: "— " counter(item-counter);
+        color: var(--accent-color);
+        margin-bottom: 5px;
+    }
+}
