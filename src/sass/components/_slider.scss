@@ -1,5 +1,9 @@
 .slider-for {
     margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
 .slick-slider {
@@ -16,7 +20,12 @@
     display: flex;
     flex-wrap: nowrap;
     min-width: 1188px;
-    justify-content: start;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.slider-nav .slick-slide {
+    max-width: 86px;
 }
 
 .slider-nav__image{
@@ -35,6 +44,23 @@
     background-color: inherit;
     padding: 0;
     cursor: pointer;
+    
+    @media (min-width: 768px) {
+        position: absolute;
+        top: -180px;
+    }
+}
+
+.slick-prev {
+    @media (min-width: 768px) {
+            left: 15px
+        }
+}
+
+.slick-next {
+    @media (min-width: 768px) {
+            right: 15px;
+        }
 }
 
 .slick-prev::before {
