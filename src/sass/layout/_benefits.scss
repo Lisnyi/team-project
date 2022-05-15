@@ -3,6 +3,7 @@
             var(--main-black-color) 59.8%,
             var(--white-color) 59.8%);
     padding-bottom: 40px;
+    margin: -1px 0px;
 }
 .benefits{
     counter-reset: item-counter;
@@ -21,7 +22,6 @@
     line-height: 1.27;
     letter-spacing: 0.03em; 
     color: var(--white-color);
-    margin-bottom: 32px;
 }
 
 .benefits__item{
