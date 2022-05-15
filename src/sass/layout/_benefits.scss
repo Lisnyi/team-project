@@ -1,0 +1,109 @@
+.benefits {
+    background-image: linear-gradient(to bottom,
+            var(--main-black-color) 59.8%,
+            var(--white-color) 59.8%);
+    padding-bottom: 40px;
+}
+.benefits{
+    counter-reset: item-counter;
+}
+
+.benefits__list {
+    background-color: white;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    padding: 20px 24px 20px 20px;
+}
+
+.benefits__title{
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.27;
+    letter-spacing: 0.03em; 
+    color: var(--white-color);
+    margin-bottom: 32px;
+}
+
+.benefits__item{
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.43;
+    color: var(--main-black-color);
+    @media (max-width: 479px) {
+        &:not(:last-child){
+        margin-bottom: 40px;
+        }
+    }
+    
+    counter-increment: item-counter;
+    &::before{
+        content: "— " counter(item-counter);
+        color: var(--accent-color);
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1679px) {
+    .benefits{
+        background-image: linear-gradient(to bottom,
+                var(--main-black-color) 46.2%,
+                var(--white-color) 46.2%);
+    }
+
+    .benefits__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 112px 40px 92px;
+    }
+
+    .benefits__item {
+        width: calc((100% - 32px)/2);
+
+        &:not(:nth-child(2n)) {
+            margin-right: 32px;
+        }
+
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 44px;
+        }
+    }
+
+    .benefits__title {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width:1680px) {
+    .benefits {
+        background-image: linear-gradient(to bottom,
+                var(--main-black-color) 43.0%,
+                var(--white-color) 43.0%);
+        padding-bottom: 80px;
+    }
+
+    .benefits__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 32px 60px 140px;
+    }
+
+    .benefits__item {
+        font-size: 20px;
+        line-height: 1.4;
+        width: calc((100% - 408px)/3);
+        &:not(:nth-child(3n)) {
+            margin-right: 204px;
+        }
+        &:not(:nth-last-child(-n + 3)) {
+            margin-bottom: 40px;
+        }
+    }
+
+    .benefits__title {
+        display: none;
+    }
+}
