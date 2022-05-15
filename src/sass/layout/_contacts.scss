@@ -32,9 +32,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-}
-
-.contacts-description__item {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
@@ -53,11 +50,18 @@
     width: 100%;
     height: 48px;
     padding-left: 28px;
-    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
     color: var(--white-color);
     background-color: transparent;
     border: 1px solid var(--white-color);
     outline: none;
+
+    &:nth-child(1) {
+        margin-bottom: 20px;
+    }
 
     &:hover,
     &:focus {
@@ -123,9 +127,6 @@
     .contacts-description {
         margin-bottom: 24px;
         width: 452px;
-    }
-
-    .contacts-description__item {
         font-size: 14px;
         line-height: 1.21;
     }
@@ -165,9 +166,6 @@
     .contacts-description {
         margin-bottom: 60px;
         width: 1190px;
-    }
-
-    .contacts-description__item {
         font-size: 30px;
         line-height: 1.23;
     }
@@ -178,12 +176,17 @@
 
     .contacts-form__input {
         height: 70px;
-        margin-top: 32px;
+        font-size: 20px;
+        line-height: 1.20;
+
+        &:nth-child(1) {
+            margin-bottom: 32px;
+        }
 
         &::placeholder {
             font-size: 20px;
             line-height: 1.20;
-            }
+        }
     }
 
     .contacts-form__submit-button {
