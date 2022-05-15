@@ -12,6 +12,11 @@
   letter-spacing: 0.03em;
   color: var(--main-black-color);
 
+  @media screen and(min-width:768px) {
+    font-size: 20px;
+    line-height: 33.8px;
+  }
+
   @media screen and(min-width:1680px) {
     text-align: start;
     font-size: 46px;
@@ -149,7 +154,7 @@
     padding: 8px 0;
   }
 
-  @media screen and(min: width 1680px) {
+  @media screen and(min-width: 1680px) {
     padding: 4px 0;
   }
 }
@@ -170,7 +175,7 @@
   align-items: flex-end;
   letter-spacing: 0.08em;
 
-  @media screen and(min: width 768px) {
+  @media screen and(min-width: 768px) {
     padding: 0 22px;
   }
 
