@@ -19,7 +19,7 @@ color: var(--main-black-color);
 }
 
 .guarantees-list__item{
-padding-left: 7px;
+padding-left: 20px;
 font-weight: 500;
 font-size: 12px;
 line-height: 1.6;
@@ -28,21 +28,14 @@ color: var(--additional-text-color);
     display: inline-flex;
     content: " ";
     width: 17px;
-    height: 14px;
+    height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-image: url("../images/guarantees/Fire.svg");
 }
 &:not(:last-child){
     border-left: 1px dashed var(--secondary-text-color);
 }
-}
-
-.guarantees-list__item{
-    &:before{
-        margin-right: 9px;
-        background-image: url("../images/guarantees/Fire.svg");
-    }
 }
 
 
