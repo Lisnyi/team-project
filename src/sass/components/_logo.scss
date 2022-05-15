@@ -1,0 +1,56 @@
+<<<<<<< Updated upstream
+=======
+.logo {
+	color: var(--main-black-color);
+	font-size: 18px;
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	@media screen and (min-width: 768px) {
+		font-size: 26px;
+	}
+}
+
+.logo-upper {
+	display: flex;
+	align-items: baseline;
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}
+
+.under-orange {
+	color: var(--accent-color);
+}
+
+.logo-under {
+	font-size: 5px;
+	@media screen and (min-width: 768px) {
+		font-size: 8px;
+	}
+}
+
+.logo-header {
+	margin-right: auto;
+	padding: 20px 0;
+	@media screen and (min-width: 768px) {
+		padding: 40px 0;
+	}
+}
+
+.menu-logo {
+	color: var(--white-color);
+	margin-bottom: 20px;
+	padding-top: 40px;
+	@media screen and (max-width: 768px) {
+		padding: 20px 0;
+	}
+	@media (min-width: 768px) and (max-width: 1679px) {
+		margin-bottom: 80px;
+	}
+	@media screen and (min-width: 1680px) {
+		display: none;
+	}
+}
+>>>>>>> Stashed changes

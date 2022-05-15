@@ -32,8 +32,17 @@ a {
 }
 
 .container {
+<<<<<<< Updated upstream
     padding: 0 20px;
     margin: 0 auto;
+=======
+    padding: 0 15px;
+    margin: 0 auto;
+
+	@media (min-width: 480px) {
+		max-width: 480px;
+	}
+>>>>>>> Stashed changes
 
     @media (min-width: 480px) {
         max-width: 480px;    
