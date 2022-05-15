@@ -3,6 +3,15 @@
     background-color: var(--white-color);
 }
 
+.about__container{
+    @media screen and (min-width:480px) {
+        max-width: 480px; 
+     }
+    @media screen and (min-width:768px) {
+       max-width: 768px; 
+    }
+}
+
 .teacher__title{
 margin-bottom: 20px;
 font-weight: 800;
@@ -14,6 +23,15 @@ color: var(--main-black-color);
 
 .teacher__box{
     margin-bottom: 20px;
+}
+
+.teacher__description-box{
+    @media screen and (min-width:768px) {
+        margin-left: 60px;
+    }
+    @media screen and (min-width:1680px) {
+        margin-left: 172px;
+    }
 }
 
 .teacher__name{
