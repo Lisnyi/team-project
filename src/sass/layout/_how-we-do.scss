@@ -1,11 +1,14 @@
-<<<<<<< Updated upstream
-=======
 .doings {
   background: var(--white-color);
   margin-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1680px) {
   }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .doings__title {
@@ -16,14 +19,39 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-black-color);
+
+  @media screen and(min-width:1680px) {
+    margin-bottom: 80px;
+
+    text-align: start;
+    font-size: 46px;
+    line-height: 59.8px;
+  }
 }
 
 .how-do-we-do {
   display: block;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.how-do-we-do__item:not(:last-child) {
+.how-do-we-do__item {
   padding-bottom: 16px;
+
+  @media screen and(min-width:768px) {
+    flex: 1 1 calc((100% / 2) - 2rem);
+
+    padding-bottom: 24px;
+  }
+
+  @media screen and(min-width:1680px) {
+    flex: 1 1 calc((100% / 3) - 2rem);
+
+    padding-bottom: 31px;
+  }
 }
 
 .how-do-we-do__link {
@@ -34,16 +62,45 @@
 .how-do-we-do__box {
   margin: auto;
   padding-top: 32px;
-  width: 280px;
+  width: 100%;
   height: 280px;
   background-color: var(--white-color);
   box-sizing: border-box;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  @media screen and(min-width:768px) {
+    width: 336px;
+    height: 336px;
+    padding-top: 40px;
+  }
+
+  @media screen and(min-width:1680px) {
+    width: 528px;
+    height: 492px;
+
+    padding-top: 90px;
+  }
 }
 
 .how-do-we-do__box:focus,
 .how-do-we-do__box:hover {
   background-color: var(--accent-color);
+}
+
+.how-do-we-do__box:hover .how-do-we-do__svg {
+  fill: white;
+}
+
+.how-do-we-do__box:hover .how-do-we-do__name::after {
+  color: white;
+}
+
+.how-do-we-do__box:hover .how-do-we-do__name {
+  color: white;
+}
+
+.how-do-we-do__box:hover .how-do-we-do__paragraph {
+  color: white;
 }
 
 .how-do-we-do__svg {
@@ -59,13 +116,21 @@
 
 .how-do-we-do__name {
   padding-top: 20px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   align-items: center;
   letter-spacing: 0.08em;
   color: var(--main-black-color);
+
+  @media screen and(min-width:768px) {
+    padding-top: 32px;
+  }
+
+  @media screen and(min-width:1680px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 
   &:hover,
   &:focus {
@@ -87,6 +152,14 @@
   text-align: center;
   justify-content: center;
   letter-spacing: 0.08em;
+
+  @media screen and(min-width:768px) {
+    padding: 8px 0;
+  }
+
+  @media screen and(min-width:1680px) {
+    padding: 4px 0;
+  }
 }
 
 .how-do-we-do__name:hover:after {
@@ -103,10 +176,15 @@
   text-align: center;
   align-items: flex-end;
   letter-spacing: 0.08em;
+  margin: 0px 4px;
+
+  @media screen and(min-width:1680px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .how-do-we-do__paragraph:hover,
 .how-do-we-do__paragraph:focus {
   color: var(--white-color);
 }
->>>>>>> Stashed changes

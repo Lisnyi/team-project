@@ -1,7 +1,11 @@
 .logo {
 	color: var(--main-black-color);
 	font-size: 18px;
+<<<<<<< HEAD
 	font-weight: 700;
+=======
+	font-weight: 800;
+>>>>>>> 65d34794ac0ee3f5f7d088feaca4ebabaee2334c
 	display: flex;
 	flex-direction: column;
 	align-items: baseline;
@@ -16,19 +20,30 @@
 	@media screen and (max-width: 767px) {
 		display: block;
 	}
+<<<<<<< HEAD
 }
 
 .under-orange {
 	color: var(--accent-color);
+=======
+>>>>>>> 65d34794ac0ee3f5f7d088feaca4ebabaee2334c
 }
 
 .logo-under {
+	font-weight: 700;
 	font-size: 5px;
 	@media screen and (min-width: 768px) {
 		font-size: 8px;
 	}
 }
 
+<<<<<<< HEAD
+=======
+.under-orange {
+	color: var(--accent-color);
+}
+
+>>>>>>> 65d34794ac0ee3f5f7d088feaca4ebabaee2334c
 .logo-header {
 	margin-right: auto;
 	padding: 20px 0;
@@ -51,3 +66,20 @@
 		display: none;
 	}
 }
+<<<<<<< HEAD
+=======
+
+.footer-logo {
+	display: block;
+	@media screen and (max-width: 767px) {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	@media screen and (min-width: 768px) {
+		margin-right: auto;
+	}
+	@media screen and (min-width: 1680px) {
+		margin-right: 500px;
+	}
+}
+>>>>>>> 65d34794ac0ee3f5f7d088feaca4ebabaee2334c
