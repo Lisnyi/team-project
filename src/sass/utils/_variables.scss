@@ -7,4 +7,10 @@
 	--accent-color: rgb(255, 107, 9);
 	--secondary-text-color: rgb(185, 185, 185);
 	--additional-text-color: rgb(61, 61, 61);
+	// Animation
+	--animation: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
