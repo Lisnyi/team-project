@@ -1,0 +1,61 @@
+.slider-for {
+    margin-bottom: 40px;
+}
+
+.slick-slider {
+    display: flex;
+}
+
+.slick-list {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.slick-track {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 1188px;
+    justify-content: start;
+}
+
+.slider-nav__image{
+    background-color: transparent;
+
+    .slick-current & {
+        background-color: transparent;
+        border: 2px solid var(--accent-color);
+        border-radius: 50%;
+    }
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-prev::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 16px;
+    margin: 0 auto;
+    background-image: url(../images/reviews/Arrow-left.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slick-next::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 16px;
+    margin: 0 auto;
+    background-image: url(../images/reviews/Arrow-right.svg);
+    background-position: 50% 50%;
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
