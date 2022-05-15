@@ -1,5 +1,15 @@
 .slider-for {
     margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 70px;
+        padding: 0 65px 0 67px;
+    }
+
+    @media (min-width: 1680px) {
+        margin-bottom: 100px;
+        padding: 0 169px 0 138px;
+    }
 }
 
 .slick-slider {
@@ -7,16 +17,24 @@
 }
 
 .slick-list {
-    margin-left: 22px;
-    margin-right: 22px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slick-track {
     margin: 0 auto;
+}
+
+.slider-nav .slick-track {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     min-width: 1188px;
-    justify-content: start;
+}
+
+.slider-nav .slick-slide {
+    max-width: 86px;
 }
 
 .slider-nav__image{
@@ -35,6 +53,35 @@
     background-color: inherit;
     padding: 0;
     cursor: pointer;
+    
+    @media (min-width: 768px) {
+        position: absolute;
+        top: -180px;
+    }
+
+    @media (min-width: 1680px) {
+        top: -250px;
+    }
+}
+
+.slick-prev {
+    @media (min-width: 768px) {
+            left: 15px
+        }
+
+    @media (min-width: 1680px) {
+        left: 0px
+    }
+}
+
+.slick-next {
+    @media (min-width: 768px) {
+            right: 15px;
+        }
+
+    @media (min-width: 1680px) {
+        right: 0;
+    }
 }
 
 .slick-prev::before {
