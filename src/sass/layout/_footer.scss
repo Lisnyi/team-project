@@ -16,15 +16,20 @@
 	}
 }
 
+.test {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .footer-phone {
 	font-weight: 600;
-	display: inline-block;
 	position: relative;
 	color: var(--main-black-color);
 	&::before {
 		content: "";
 		position: absolute;
-		top: 0;
+		top: 0px;
 		left: -25px;
 		background-image: url("../images/footer/Vector.svg");
 		width: 20px;
@@ -42,15 +47,15 @@
 			left: -40px;
 		}
 	}
-	@media screen and (max-width: 767px) {
-		margin-bottom: 20px;
-	}
 	@media screen and (min-width: 768px) {
 		font-size: 20px;
 		margin-right: 48px;
 	}
 	@media screen and (min-width: 1680px) {
 		font-size: 30px;
+	}
+	@media screen and (max-width: 767px) {
+		margin-bottom: 20px;
 	}
 }
 
