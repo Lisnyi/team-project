@@ -10,7 +10,8 @@
 }
 
 .benefits__list {
-    background-color: white;
+    position: relative;
+    background-color: var(--white-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     padding: 20px 24px 20px 20px;
 }
@@ -89,6 +90,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 60px 32px 60px 140px;
+        // z-index: 2;
     }
 
     .benefits__item {
