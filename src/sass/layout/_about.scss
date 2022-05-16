@@ -120,13 +120,13 @@ color: #111518;
 }
 }
 
-.teacher-advantages__item + .teacher-advantages__item{
-&:not(:first-child){
-    margin-top: 7px;
+.teacher-advantages__item{
+&:not(:last-child){
+    margin-bottom: 7px;
 }
 @media screen and (min-width:768px) {
-    &:not(:first-child){
-        margin-top: 25px;
+    &:not(:last-child){
+        margin-bottom: 25px;
     } 
  }
 }
@@ -146,10 +146,12 @@ color: var(--secondary-text-color);
 @media screen and (min-width:768px) {
     font-size: 10px;
     line-height: 2;
+    margin-bottom: 24px;
 }
 @media screen and (min-width:1680px) {
     font-size: 18px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 }
 

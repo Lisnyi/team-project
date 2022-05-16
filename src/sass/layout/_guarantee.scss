@@ -80,8 +80,10 @@ color: var(--additional-text-color);
 }
 
 .guarantees-list__item{
+    &:not(:last-child){
         padding-bottom: 20px;
-        margin-bottom: 6px;
+        margin-bottom: 6px;    }
+
     }
 
     .symbol,
