@@ -1,12 +1,15 @@
 .footer {
 	background: var(--white-color);
-	@media screen and (max-width: 767px) {
-		text-align: center;
-	}
 }
 
 .footer-contacts {
 	padding: 40px 0;
+	@media screen and (max-width: 767px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
 	@media screen and (min-width: 768px) {
 		display: flex;
 		align-items: center;
@@ -16,10 +19,11 @@
 	}
 }
 
-.test {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.phone-container {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 20px;
+		display: inline-block;
+	}
 }
 
 .footer-phone {
@@ -54,16 +58,12 @@
 	@media screen and (min-width: 1680px) {
 		font-size: 30px;
 	}
-	@media screen and (max-width: 767px) {
-		margin-bottom: 20px;
-	}
 }
 
-.footer-soc {
-	padding: 0;
+.footer-soc__link {
+	display: inline-block;
 	@media screen and (max-width: 767px) {
-		display: block;
-		margin: 0 auto;
+		margin: 0 0;
 	}
 	@media screen and (min-width: 768px) {
 		position: relative;
