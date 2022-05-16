@@ -1,6 +1,6 @@
 .doings {
   background: var(--white-color);
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .doings__title {
@@ -30,22 +30,27 @@
   @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px 66px;
+  }
+
+  @media screen and(min-width:1680px) {
+    gap: 24px 33px;
   }
 }
 
 .how-do-we-do__item {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   @media screen and(min-width:768px) {
-    flex: 1 1 calc((100% / 2) - 2rem);
+    flex-basis: calc((100% - 66px) / 2);
 
-    padding-bottom: 24px;
+    margin-bottom: 0px;
   }
 
   @media screen and(min-width:1680px) {
-    flex: 1 1 calc((100% / 3) - 2rem);
+    flex-basis: calc((100% - 66px) / 3);
 
-    padding-bottom: 32px;
+    margin-bottom: 0px;
   }
 }
 
@@ -78,19 +83,23 @@
   }
 }
 
-.how-do-we-do__box:hover .how-do-we-do__svg {
+.how-do-we-do__box:hover .how-do-we-do__svg,
+.how-do-we-do__box:focus .how-do-we-do__svg {
   fill: var(--white-color);
 }
 
-.how-do-we-do__box:hover .how-do-we-do__name {
+.how-do-we-do__box:hover .how-do-we-do__name,
+.how-do-we-do__box:focus .how-do-we-do__name {
   color: var(--white-color);
 }
 
-.how-do-we-do__box:hover .how-do-we-do__name::after {
+.how-do-we-do__box:hover .how-do-we-do__name::after,
+.how-do-we-do__box:focus .how-do-we-do__name::after {
   color: var(--white-color);
 }
 
-.how-do-we-do__box:hover .how-do-we-do__paragraph {
+.how-do-we-do__box:hover .how-do-we-do__paragraph,
+.how-do-we-do__box:focus .how-do-we-do__paragraph {
   color: var(--white-color);
 }
 .how-do-we-do__box:focus,
@@ -111,7 +120,7 @@
 }
 
 .how-do-we-do__name {
-  padding-top: 20px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -121,7 +130,7 @@
   color: var(--main-black-color);
 
   @media screen and(min-width:768px) {
-    padding-top: 32px;
+    margin-top: 32px;
   }
 
   @media screen and(min-width:1680px) {
@@ -136,26 +145,20 @@
 }
 
 .how-do-we-do__name::after {
-  padding: 4px 0;
+  margin-top: 4px;
   content: '—';
   color: var(--accent-color);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 164.9%;
-  /* or 33px */
 
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  letter-spacing: 0.08em;
 
   @media screen and(min-width:768px) {
-    padding: 8px 0;
+    margin-top: 8px;
   }
 
   @media screen and(min-width: 1680px) {
-    padding: 4px 0;
+    margin-top: 4px;
   }
 }
 
@@ -166,7 +169,7 @@
 }
 
 .how-do-we-do__paragraph {
-  padding: 0 4px;
+  margin-top: 4px;
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
@@ -176,11 +179,11 @@
   letter-spacing: 0.08em;
 
   @media screen and(min-width: 768px) {
-    padding: 0 22px;
+    margin-top: 8px;
   }
 
   @media screen and(min-width:1680px) {
-    padding: 0 81px;
+    margin-top: 4px;
     font-size: 18px;
     line-height: 28px;
   }

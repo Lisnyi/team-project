@@ -32,7 +32,7 @@
     color: var(--main-black-color);
     display: flex;
     flex-direction: column;
-    @media (max-width: 479px) {
+    @media (max-width: 767px) {
         &:not(:last-child){
         margin-bottom: 16px;
         }
@@ -41,7 +41,7 @@
     counter-increment: item-counter;
     
     &::before {
-        content: "— " counter(item-counter);
+        content: "— " counter(item-counter, decimal-leading-zero);
         color: var(--accent-color);
         margin-bottom: 5px;
     }

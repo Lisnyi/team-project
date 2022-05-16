@@ -2,7 +2,7 @@
 	overflow: hidden;
 }
 
-/*----------modal-menu----------*/
+/*----------mobile-menu----------*/
 
 .menu-container {
 	&.is-open {
@@ -42,37 +42,17 @@
 	}
 }
 
-.logo-header {
-	margin-right: auto;
-	padding: 20px 0;
-	@media screen and (min-width: 768px) {
-		padding: 40px 0;
-	}
-}
-
-.menu-logo {
-	color: var(--white-color);
-	margin-bottom: 20px;
-	padding-top: 40px;
-	@media screen and (max-width: 768px) {
-		padding: 20px 0;
-	}
-	@media (min-width: 768px) and (max-width: 1679px) {
-		margin-bottom: 80px;
-	}
-	@media screen and (min-width: 1680px) {
-		display: none;
-	}
-}
-
 .menu-mobile__button {
 	position: absolute;
-	top: 25px;
-	right: 15px;
+	top: 20px;
+	right: 20px;
+	width: 21px;
+	height: 21px;
+	padding: 0;
 	background-color: rgba(28, 28, 28, 0);
 	@media screen and (min-width: 768px) {
-		top: 52px;
-		right: 12px;
+		top: 45px;
+		right: 15px;
 	}
 	@media screen and (min-width: 1680px) {
 		display: none;
@@ -80,6 +60,38 @@
 }
 
 .icon-cross {
+	stroke: var(--white-color);
+	width: 20px;
+	height: 20px;
+	&:hover {
+		stroke: var(--accent-color);
+	}
+	&:focus {
+		stroke: var(--accent-color);
+		fill: var(--accent-color);
+	}
+	transition: fill, 250ms linear;
+}
+
+.icon-menu {
+	background-color: transparent;
 	width: 21px;
-	height: 12px;
+	height: 21px;
+	&:hover {
+		fill: var(--accent-color);
+	}
+	&:focus {
+		fill: var(--accent-color);
+		stroke: var(--accent-color);
+	}
+	transition: fill, 250ms linear;
+}
+
+.logo-icon {
+	width: 22px;
+	height: 30px;
+	@media screen and (max-width: 767px) {
+		width: 14px;
+		height: 20px;
+	}
 }

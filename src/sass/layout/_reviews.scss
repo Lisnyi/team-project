@@ -1,14 +1,19 @@
 .reviews-section {
     background-color: var(--white-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: 1680px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }
 
 .reviews__container {
-    padding-top: 40px;
-    padding-bottom: 40px;
     text-align: center;
 
     @media (min-width: 1680px) {
-        padding: 80px 238px 80px 239px
+        padding: 0 238px 0 239px
     }
 }
 
