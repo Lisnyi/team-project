@@ -46,6 +46,8 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
+	width: 21px;
+	height: 21px;
 	background-color: rgba(28, 28, 28, 0);
 	@media screen and (min-width: 768px) {
 		top: 45px;
@@ -65,18 +67,21 @@
 	}
 	&:focus {
 		stroke: var(--accent-color);
+		fill: var(--accent-color);
 	}
 	transition: fill, 250ms linear;
 }
 
 .icon-menu {
+	background-color: transparent;
 	width: 21px;
-	height: 12px;
+	height: 21px;
 	&:hover {
 		fill: var(--accent-color);
 	}
 	&:focus {
 		fill: var(--accent-color);
+		stroke: var(--accent-color);
 	}
 	transition: fill, 250ms linear;
 }

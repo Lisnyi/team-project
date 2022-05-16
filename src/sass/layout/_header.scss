@@ -53,8 +53,10 @@
 	font-size: 20px;
 	color: var(--white-color);
 	transition: color, 250ms linear;
-	&:hover,
-	:focus {
+	&:hover {
+		color: var(--accent-color);
+	}
+	&:focus {
 		color: var(--accent-color);
 	}
 	@media screen and (min-width: 768px) {
