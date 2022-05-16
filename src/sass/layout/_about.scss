@@ -14,6 +14,10 @@
     @media screen and (min-width:768px) {
        max-width: 768px;
     }
+
+    @media screen and (min-width:1680px) {
+        max-width: 1680px;
+     }
 }
 
 .teacher__container{
@@ -75,6 +79,10 @@ font-weight: 800;
 font-size: 20px;
 line-height: 1.2;
 color: var(--main-black-color);
+
+@media screen and (min-width:1680px) {
+    font-size: 30px;
+}
 }
 
 .teacher-advantages__container{
@@ -103,6 +111,13 @@ font-weight: 600;
 line-height: 1.2;
 letter-spacing: 0.06em;
 color: #111518;
+
+@media screen and (min-width:768px) {
+    font-size: 12px;
+}
+@media screen and (min-width:1680px) {
+    font-size: 16px;
+}
 }
 
 .teacher-advantages__item + .teacher-advantages__item{
@@ -111,7 +126,7 @@ color: #111518;
 }
 @media screen and (min-width:768px) {
     &:not(:first-child){
-        margin-top: 40px;
+        margin-top: 25px;
     } 
  }
 }
@@ -128,6 +143,14 @@ font-weight: 500;
 font-size: 12px;
 line-height: 1.6;
 color: var(--secondary-text-color);
+@media screen and (min-width:768px) {
+    font-size: 10px;
+    line-height: 2;
+}
+@media screen and (min-width:1680px) {
+    font-size: 18px;
+    line-height: 1.5;
+}
 }
 
 .teacher-desription__link{
@@ -136,5 +159,10 @@ font-size: 12px;
 line-height: 1.6;
 text-decoration-line: underline;
 color: var(--accent-color);
+
+@media screen and (min-width:1680px) {
+    font-size: 18px;
+    line-height: 1.5;
+}
 }
 
