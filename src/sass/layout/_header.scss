@@ -12,6 +12,7 @@
 }
 
 .menu-button {
+	padding: 0;
 	background: var(--white-color);
 	@media screen and (min-width: 1680px) {
 		display: none;
@@ -53,8 +54,10 @@
 	font-size: 20px;
 	color: var(--white-color);
 	transition: color, 250ms linear;
-	&:hover,
-	:focus {
+	&:hover {
+		color: var(--accent-color);
+	}
+	&:focus {
 		color: var(--accent-color);
 	}
 	@media screen and (min-width: 768px) {
@@ -111,6 +114,7 @@
 	width: 260px;
 	height: 48px;
 	margin-right: 40px;
+	margin-left: 0;
 	@media screen and (min-width: 0px) and (max-width: 767px) {
 		display: none;
 	}
