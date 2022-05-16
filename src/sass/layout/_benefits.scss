@@ -23,6 +23,7 @@
     line-height: 1.27;
     letter-spacing: 0.03em; 
     color: var(--white-color);
+    margin-bottom: 32px;
 }
 
 .benefits__item{
@@ -31,7 +32,7 @@
     flex-direction: column;
     line-height: 1.43;
     color: var(--main-black-color);
-    @media (max-width: 479px) {
+    @media (max-width: 767px) {
         &:not(:last-child){
         margin-bottom: 40px;
         }
@@ -39,7 +40,7 @@
     
     counter-increment: item-counter;
     &::before{
-        content: "— " counter(item-counter);
+        content: "— " counter(item-counter, decimal-leading-zero);
         color: var(--accent-color);
         margin-bottom: 8px;
     }
@@ -90,7 +91,6 @@
         display: flex;
         flex-wrap: wrap;
         padding: 60px 32px 60px 140px;
-        // z-index: 2;
     }
 
     .benefits__item {
