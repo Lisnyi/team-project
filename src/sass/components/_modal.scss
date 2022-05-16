@@ -48,6 +48,7 @@
 	right: 20px;
 	width: 21px;
 	height: 21px;
+	padding: 0;
 	background-color: rgba(28, 28, 28, 0);
 	@media screen and (min-width: 768px) {
 		top: 45px;
@@ -60,8 +61,8 @@
 
 .icon-cross {
 	stroke: var(--white-color);
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 	&:hover {
 		stroke: var(--accent-color);
 	}

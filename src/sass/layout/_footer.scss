@@ -24,6 +24,9 @@
 		margin-bottom: 20px;
 		display: inline-block;
 	}
+	@media screen and (min-width: 768px) {
+		margin-right: 48px;
+	}
 }
 
 .footer-phone {
@@ -44,19 +47,15 @@
 		@media screen and (min-width: 768px) {
 			width: 24px;
 			height: 22px;
+			font-size: 20px;
+			margin-right: 48px;
 		}
 		@media screen and (min-width: 1680px) {
 			width: 30px;
 			height: 29px;
 			left: -40px;
+			font-size: 30px;
 		}
-	}
-	@media screen and (min-width: 768px) {
-		font-size: 20px;
-		margin-right: 48px;
-	}
-	@media screen and (min-width: 1680px) {
-		font-size: 30px;
 	}
 }
 
