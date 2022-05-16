@@ -1,6 +1,6 @@
 .guarantees-section{
     padding-bottom: 40px;
-    background-color: #F1F1F1;
+    background-color: var(--white-color);
 }
 
 .guarantees__title{
@@ -16,11 +16,20 @@ color: var(--main-black-color);
 .guarantees-container{
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #F1F1F1;
+
+    @media screen and (min-width:480px) {
+        max-width: 480px; 
+     }
+    @media screen and (min-width:768px) {
+       max-width: 768px;
+    }
 }
 
 .guarantees-list{
     position: relative;
 }
+
 
 .guarantees-list__item{
 padding-left: 24px;
@@ -34,9 +43,10 @@ color: var(--additional-text-color);
     content: " ";
     width: 17px;
     height: 20px;
+    float: left;
     left: -7px;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-image: url("../images/guarantees/Fire.svg");
 }
 &:not(:last-child){

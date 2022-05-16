@@ -2,7 +2,7 @@
 	color: var(--main-black-color);
 	font-size: 18px;
 	font-weight: 800;
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	align-items: baseline;
 	@media screen and (min-width: 768px) {
@@ -11,11 +11,8 @@
 }
 
 .logo-upper {
-	display: flex;
+	display: inline-flex;
 	align-items: baseline;
-	@media screen and (max-width: 767px) {
-		display: block;
-	}
 }
 
 .logo-under {
@@ -39,6 +36,7 @@
 }
 
 .menu-logo {
+	margin-right: auto;
 	color: var(--white-color);
 	margin-bottom: 20px;
 	padding-top: 40px;
@@ -54,9 +52,9 @@
 }
 
 .footer-logo {
-	display: block;
+	display: inline-block;
 	@media screen and (max-width: 767px) {
-		margin: 0 auto;
+		margin: 0 0;
 		margin-bottom: 20px;
 	}
 	@media screen and (min-width: 768px) {
