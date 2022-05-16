@@ -1,16 +1,22 @@
 .guarantees-section{
     padding-bottom: 40px;
     background-color: var(--white-color);
+    @media screen and (min-width:1680px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+     }
 }
 
 .guarantees__title{
-margin-bottom: 40px;
+padding-bottom: 40px;
 font-weight: 800;
 font-size: 26px;
 line-height: 1.3;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--main-black-color);
+
+
 
 @media screen and (min-width:1680px) {
     font-size: 46px;
@@ -19,30 +25,27 @@ color: var(--main-black-color);
 }
 
 .guarantees-container{
-    padding: 40px 20px 40px 20px;
     background-color: #F1F1F1;
-
-    @media screen and (min-width:480px) {
-        max-width: 480px; 
-     }
-
-    @media screen and (min-width:768px) {
-       max-width: 768px;
-       padding: 32px 58px 32px 58px;
+    padding: 40px 20px 40px 20px;
+    
+        @media screen and (min-width:480px) {
+            max-width: 480px; 
+         }
+    
+        @media screen and (min-width:768px) {
+           max-width: 768px;
+           padding: 32px 58px 32px 58px;
+        }
+    
+        @media screen and (min-width:1680px) {
+            max-width: 1680px;
+            padding: 60px 280px 60px 280px;
+         }
     }
-
-    @media screen and (min-width:1680px) {
-        max-width: 1680px;
-        padding: 60px 280px 60px 280px;
-     }
-}
-
-.guarantees-list{
-    position: relative;
-}
 
 
 .guarantees-list__item{
+position: relative;
 padding-left: 24px;
 font-weight: 500;
 font-size: 12px;
@@ -58,22 +61,27 @@ color: var(--additional-text-color);
     content: " ";
     width: 17px;
     height: 20px;
-    float: left;
+    top: -3px;
     left: -7px;
     background-size: contain;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-image: url("../images/guarantees/Fire.svg");
-}
-&:not(:last-child){
-    border-left: 1px dashed var(--secondary-text-color);
-}
+    @media screen and (min-width:768px) {
+        left: -8px;
+     }
 }
 
+}
 
-.guarantees-list__item + .guarantees-list__item{
-    &:not(:first-child){
-        margin-top: 20px;
+.guarantees-list__item{
+    &:not(:last-child){
+        border-left: 1px dashed var(--secondary-text-color);
     }
+}
+
+.guarantees-list__item{
+        padding-bottom: 20px;
+        margin-bottom: 6px;
     }
 
     .symbol,
