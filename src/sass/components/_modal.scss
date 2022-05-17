@@ -8,7 +8,7 @@
 	&.is-open {
 		display: flex;
 	}
-	transition: opacity 500ms linear;
+	transition: opacity var(--animation-duration) var(--animation-timing-function);
 	@media (max-width: 1679px) {
 		display: none;
 		position: fixed;
@@ -70,7 +70,7 @@
 		stroke: var(--accent-color);
 		fill: var(--accent-color);
 	}
-	transition: fill, 250ms linear;
+	transition: stroke var(--animation-duration) var(--animation-timing-function);
 }
 
 .icon-menu {
@@ -84,7 +84,7 @@
 		fill: var(--accent-color);
 		stroke: var(--accent-color);
 	}
-	transition: fill, 250ms linear;
+	transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
 .logo-icon {

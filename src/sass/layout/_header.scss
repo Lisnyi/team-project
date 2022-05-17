@@ -53,7 +53,7 @@
 	font-weight: 700;
 	font-size: 20px;
 	color: var(--white-color);
-	transition: color, 250ms linear;
+	transition: color var(--animation-duration) var(--animation-timing-function);
 	&:hover {
 		color: var(--accent-color);
 	}
@@ -82,7 +82,7 @@
 	border: 2px solid var(--accent-color);
 	display: block;
 	text-align: center;
-	transition: background-color, 250ms linear;
+	transition: color, background-color var(--animation-duration) var(--animation-timing-function);
 	&:hover {
 		color: var(--white-color);
 		background-color: var(--accent-color);
