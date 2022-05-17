@@ -102,7 +102,7 @@
 .how-do-we-do__box:focus-within .how-do-we-do__paragraph {
   color: var(--white-color);
 }
-.how-do-we-do__box:focus,
+.how-do-we-do__box:focus-within,
 .how-do-we-do__box:hover {
   color: var(--white-color);
   background-color: var(--accent-color);
