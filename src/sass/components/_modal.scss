@@ -5,17 +5,24 @@
 /*----------mobile-menu----------*/
 
 .menu-container {
+	transform: translateY(-100%);
 	&.is-open {
 		display: flex;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		transform: translateX(0);
 	}
-	transition: opacity var(--animation-duration) var(--animation-timing-function);
+	transition: visibility, opacity, transform var(--animation-duration) var(--animation-timing-function);
 	@media (max-width: 1679px) {
-		display: none;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
 		position: fixed;
 		left: 0;
 		top: 0;
 		margin: 0 auto;
-		width: 100%;
+		width: 100vw;
 		height: 100vh;
 		z-index: 5;
 		background: rgba(17, 21, 24, 0.9);
