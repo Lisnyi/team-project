@@ -1,4 +1,4 @@
-.section {
+.contacts {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: var(--main-black-color);
@@ -9,7 +9,7 @@
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .section {
+    .contacts {
         background-image: url(../images/contacts/contacts-bg-mob@2x.png);
     }
 }
@@ -40,7 +40,7 @@
     color: var(--white-color);
 }
 
-.contacts-form__wrapper {
+.contacts-form {
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,6 +63,10 @@
         margin-bottom: 20px;
     }
 
+    &:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
     &:hover,
     &:focus {
         border-color: var(--accent-color);
@@ -82,7 +86,6 @@
     width: 100%;
     height: 48px;
     padding: 26px auto;
-    margin-top: 40px;
     text-align: center;
     font-weight: 700;
     font-size: 12px;
@@ -102,18 +105,18 @@
         width: 450px;
     }
 
-    .contacts-form__wrapper {
+    .contacts-form {
         width: 450px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .section {
+    .contacts {
         background-image: url(../images/contacts/contacts-bg-tab.png);
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .section {
+        .contacts {
             background-image: url(../images/contacts/contacts-bg-tab@2x.png);
         }
     }
@@ -131,29 +134,24 @@
         line-height: 1.21;
     }
 
-    .contacts-form__wrapper {
+    .contacts-form {
         width: 336px;
-        margin-bottom: 32px;
     }
 
     .contacts-form__input {
         padding-left: 24px;
     }
-
-    .contacts-form__submit-button {
-        margin-top: 32px;
-    }
 }
 
 @media screen and (min-width: 1680px) {
-    .section {
+    .contacts {
         padding-top: 80px;
         padding-bottom: 80px;
         background-image: url(../images/contacts/contacts-bg-pc.png);
     }
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .section {
+        .contacts {
             background-image: url(../images/contacts/contacts-bg-pc@2x.png);
         }
     }
@@ -170,7 +168,7 @@
         line-height: 1.23;
     }
 
-    .contacts-form__wrapper {
+    .contacts-form {
         width: 528px;
     }
 
@@ -191,7 +189,6 @@
 
     .contacts-form__submit-button {
         height: 70px;
-        margin-top: 40px;
         padding: 14px auto;
         font-size: 14px;
         line-height: 1.21;
