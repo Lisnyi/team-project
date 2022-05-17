@@ -2,20 +2,27 @@
 	overflow: hidden;
 }
 
-/*----------modal-menu----------*/
+/*----------mobile-menu----------*/
 
 .menu-container {
+	transform: translateY(-100%);
 	&.is-open {
 		display: flex;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		transform: translateX(0);
 	}
-	transition: opacity 500ms linear;
+	transition: visibility, opacity, transform var(--animation-duration) var(--animation-timing-function);
 	@media (max-width: 1679px) {
-		display: none;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
 		position: fixed;
 		left: 0;
 		top: 0;
 		margin: 0 auto;
-		width: 100%;
+		width: 100vw;
 		height: 100vh;
 		z-index: 5;
 		background: rgba(17, 21, 24, 0.9);
@@ -42,37 +49,17 @@
 	}
 }
 
-.logo-header {
-	margin-right: auto;
-	padding: 20px 0;
-	@media screen and (min-width: 768px) {
-		padding: 40px 0;
-	}
-}
-
-.menu-logo {
-	color: var(--white-color);
-	margin-bottom: 20px;
-	padding-top: 40px;
-	@media screen and (max-width: 768px) {
-		padding: 20px 0;
-	}
-	@media (min-width: 768px) and (max-width: 1679px) {
-		margin-bottom: 80px;
-	}
-	@media screen and (min-width: 1680px) {
-		display: none;
-	}
-}
-
 .menu-mobile__button {
 	position: absolute;
-	top: 25px;
-	right: 15px;
+	top: 20px;
+	right: 20px;
+	width: 21px;
+	height: 21px;
+	padding: 0;
 	background-color: rgba(28, 28, 28, 0);
 	@media screen and (min-width: 768px) {
-		top: 52px;
-		right: 12px;
+		top: 45px;
+		right: 15px;
 	}
 	@media screen and (min-width: 1680px) {
 		display: none;
@@ -80,6 +67,38 @@
 }
 
 .icon-cross {
+	stroke: var(--white-color);
+	width: 20px;
+	height: 20px;
+	&:hover {
+		stroke: var(--accent-color);
+	}
+	&:focus {
+		stroke: var(--accent-color);
+		fill: var(--accent-color);
+	}
+	transition: stroke var(--animation-duration) var(--animation-timing-function);
+}
+
+.icon-menu {
+	background-color: transparent;
 	width: 21px;
-	height: 12px;
+	height: 21px;
+	&:hover {
+		fill: var(--accent-color);
+	}
+	&:focus {
+		fill: var(--accent-color);
+		stroke: var(--accent-color);
+	}
+	transition: fill var(--animation-duration) var(--animation-timing-function);
+}
+
+.logo-icon {
+	width: 22px;
+	height: 30px;
+	@media screen and (max-width: 767px) {
+		width: 14px;
+		height: 20px;
+	}
 }
