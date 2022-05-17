@@ -4,49 +4,53 @@
 
 /*----------mobile-menu----------*/
 
-.menu-container {
+.menu-mobile {
+	position: fixed;
+	overflow: auto;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	background: rgba(17, 21, 24, 0.9);
 	transform: translateY(-100%);
+	transition: opacity var(--animation-duration) var(--animation-timing-function), visibility var(--animation-duration) var(--animation-timing-function), transform var(--animation-duration) var(--animation-timing-function);
+	
 	&.is-open {
-		display: flex;
 		opacity: 1;
 		visibility: visible;
 		pointer-events: auto;
-		transform: translateX(0);
+		transform: translateY(0);
 	}
-	transition: visibility, opacity, transform var(--animation-duration) var(--animation-timing-function);
-	@media (max-width: 1679px) {
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-		position: fixed;
-		left: 0;
-		top: 0;
-		margin: 0 auto;
-		width: 100vw;
-		height: 100vh;
-		z-index: 5;
-		background: rgba(17, 21, 24, 0.9);
+
+	@media (min-width: 1680px) {
+		display: none;
 	}
 }
 
-.menu-mobile {
-	@media (max-width: 1679px) {
-		position: relative;
-		left: 0;
-		margin: 0 auto;
-		padding: 0 15px;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		max-width: 768px;
-	}
-	@media (max-width: 767px) {
+.menu-mobile__container {
+	position: relative;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	@media (min-width: 480px) {
 		max-width: 480px;
 	}
-	@media screen and (min-width: 1680px) {
-		display: flex;
-		align-items: center;
+
+	@media (min-width: 768px) {
+		padding-top: 20px;
+		max-width: 768px;
 	}
+}
+
+.menu-mobile__nav {
+	display: block;
+
+	@media (min-width: 768px) {
+		margin-left: 201px;	
+	}	
 }
 
 .menu-mobile__button {
@@ -57,48 +61,21 @@
 	height: 21px;
 	padding: 0;
 	background-color: rgba(28, 28, 28, 0);
+
 	@media screen and (min-width: 768px) {
 		top: 45px;
 		right: 15px;
 	}
-	@media screen and (min-width: 1680px) {
-		display: none;
-	}
 }
 
-.icon-cross {
+.menu-mobile__icon-cross {
 	stroke: var(--white-color);
 	width: 20px;
 	height: 20px;
+	
 	&:hover {
 		stroke: var(--accent-color);
 	}
-	&:focus {
-		stroke: var(--accent-color);
-		fill: var(--accent-color);
-	}
+	
 	transition: stroke var(--animation-duration) var(--animation-timing-function);
-}
-
-.icon-menu {
-	background-color: transparent;
-	width: 21px;
-	height: 21px;
-	&:hover {
-		fill: var(--accent-color);
-	}
-	&:focus {
-		fill: var(--accent-color);
-		stroke: var(--accent-color);
-	}
-	transition: fill var(--animation-duration) var(--animation-timing-function);
-}
-
-.logo-icon {
-	width: 22px;
-	height: 30px;
-	@media screen and (max-width: 767px) {
-		width: 14px;
-		height: 20px;
-	}
 }

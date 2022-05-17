@@ -1,5 +1,4 @@
 .consultation {
-	margin: 0 auto;
 	color: var(--accent-color);
 	text-transform: uppercase;
 	font-weight: 700;
@@ -11,30 +10,34 @@
 	display: block;
 	text-align: center;
 	transition: backgraund-color var(--animation-duration) var(--animation-timing-function);
-	&:hover,
-	:focus {
-		color: var(--white-color);
-		background-color: var(--accent-color);
+		&:hover,
+		&:focus {
+			color: var(--white-color);
+			background-color: var(--accent-color);
+		}
+}
+
+.consultation--header-tablet {
+	display: none;
+
+	@media (min-width: 768px) {
+		display: block;
+		width: 260px;
+		height: 48px;
+		margin-left: 296px;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1679px) {
-		display: none;
-	}
-	@media screen and (min-width: 1680px) {
+		@media screen and (min-width: 1680px) {
 		height: 70px;
 		width: 336px;
 		font-size: 14px;
+		margin-left: 40px;
 	}
 }
 
-.nav-consultation {
-	display: block;
-	margin-right: 40px;
-	width: 260px;
-	height: 48px;
-	@media screen and (min-width: 0px) and (max-width: 767px) {
-		display: none;
-	}
-	@media screen and (min-width: 1680px) {
+.consultation--mobile {
+	width: 100%;
+
+	@media (min-width: 768px) {
 		display: none;
 	}
 }
