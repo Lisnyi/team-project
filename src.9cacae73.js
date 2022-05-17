@@ -9,4 +9,4 @@ $(".slider-for").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,fade:!0,asNavF
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/response"),require("./js/slider"),require("../src/js/modal");
 },{"./sass/main.scss":"clu1","./js/response":"tLxO","./js/slider":"wzuc","../src/js/modal":"RSqK"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project/src.84c84839.js.map
+//# sourceMappingURL=/team-project/src.9cacae73.js.map
