@@ -1,19 +1,66 @@
 .logo {
 	color: var(--main-black-color);
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 800;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: baseline;
 	@media screen and (min-width: 768px) {
 		font-size: 26px;
 	}
 }
 
-.under-span {
-	color: var(--accent-color);
+.logo-upper {
+	display: inline-flex;
+	align-items: baseline;
 }
 
 .logo-under {
+	font-weight: 700;
 	font-size: 5px;
 	@media screen and (min-width: 768px) {
 		font-size: 8px;
+	}
+}
+
+.under-orange {
+	color: var(--accent-color);
+}
+
+.logo-header {
+	margin-right: auto;
+	padding: 20px 0;
+	@media screen and (min-width: 768px) {
+		padding: 40px 0;
+	}
+}
+
+.menu-logo {
+	margin-right: auto;
+	color: var(--white-color);
+	margin-bottom: 20px;
+	padding-top: 40px;
+	@media screen and (max-width: 768px) {
+		padding: 20px 0;
+	}
+	@media (min-width: 768px) and (max-width: 1679px) {
+		margin-bottom: 80px;
+	}
+	@media screen and (min-width: 1680px) {
+		display: none;
+	}
+}
+
+.footer-logo {
+	display: inline-block;
+	@media screen and (max-width: 767px) {
+		margin: 0 0;
+		margin-bottom: 20px;
+	}
+	@media screen and (min-width: 768px) {
+		margin-right: auto;
+	}
+	@media screen and (min-width: 1680px) {
+		margin-right: 500px;
 	}
 }

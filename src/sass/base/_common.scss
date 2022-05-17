@@ -8,7 +8,9 @@ body {
 }
 
 img {
-	display: block;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,
@@ -33,23 +35,24 @@ a {
 
 button {
 	border: none;
+	cursor: pointer;
 }
 
 .container {
-	padding: 0 15px;
-	margin: 0 auto;
+    padding: 0 15px;
+    margin: 0 auto;
 
-	@media (min-width: 480px) {
-		max-width: 480px;
-	}
+    @media (min-width: 480px) {
+        max-width: 480px;    
+    }
 
-	@media (min-width: 768px) {
-		max-width: 768px;
-	}
-
-	@media (min-width: 1680px) {
-		max-width: 1680px;
-	}
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+    
+    @media (min-width: 1680px) {
+        max-width: 1680px;
+    }
 }
 
 .visually-hidden {
@@ -61,4 +64,8 @@ button {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.accent-words{
+    color: var(--accent-color);
 }

@@ -1,0 +1,138 @@
+.slider-for {
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 70px;
+        padding: 0 65px 0 67px;
+    }
+
+    @media (min-width: 1680px) {
+        margin-bottom: 100px;
+        padding: 0 169px 0 138px;
+    }
+}
+
+.slick-slider {
+    display: flex;
+}
+
+.slick-list {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-box {
+    @media (min-width: 768px) {
+        padding: 0 84px 0;
+    }
+
+    @media (min-width: 1680px) {
+        padding: 0 293px 0;
+    }
+}
+
+.slick-track {
+    margin: 0 auto;
+}
+
+.slider-nav .slick-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+
+    @media (min-width: 768px) {
+        margin-left: 330px;
+        max-width: 1560px;
+    }
+
+    @media (min-width: 1680px) {
+        margin-left: 400px;
+    }
+}
+
+.slider-nav .slick-slide {
+    min-width: 54px;
+    max-width: 86px;
+    margin-left: 6px;
+    margin-right: 6px;
+
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+}
+
+.slider-nav__image{
+    background-color: transparent;
+    min-width: 54px;
+
+    .slick-current & {
+        background-color: transparent;
+        border: 2px solid var(--accent-color);
+        border-radius: 50%;
+    }
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    cursor: pointer;
+    
+    @media (min-width: 768px) {
+        position: absolute;
+        top: -180px;
+    }
+
+    @media (min-width: 1680px) {
+        top: -250px;
+    }
+}
+
+.slick-prev {
+    margin-right: 22px;
+
+    @media (min-width: 768px) {
+        left: -69px;
+    }
+
+    @media (min-width: 1680px) {
+        left: -293px;
+    }
+}
+
+.slick-next {
+    margin-left: 22px;
+
+    @media (min-width: 768px) {
+        right: -69px;
+    }
+
+    @media (min-width: 1680px) {
+        right: -293px;
+    }
+}
+
+.slick-prev::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 16px;
+    margin: 0 auto;
+    background-image: url(../images/reviews/Arrow-left.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slick-next::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 16px;
+    margin: 0 auto;
+    background-image: url(../images/reviews/Arrow-right.svg);
+    background-position: 50% 50%;
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
