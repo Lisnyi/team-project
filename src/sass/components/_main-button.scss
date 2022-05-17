@@ -10,7 +10,7 @@
 	border: 2px solid var(--accent-color);
 	display: block;
 	text-align: center;
-	transition: background-color, 250ms linear;
+	transition: backgraund-color var(--animation-duration) var(--animation-timing-function);
 	&:hover,
 	:focus {
 		color: var(--white-color);
