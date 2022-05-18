@@ -1,5 +1,6 @@
 .contacts {
     width: 100%;
+    margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: auto;
@@ -72,6 +73,9 @@
 
     &:nth-child(2) {
         margin-bottom: 40px;
+    &:invalid:not(:placeholder-shown) {
+        border-color: red;
+        }
     }
 
     &:hover,
@@ -86,6 +90,8 @@
     letter-spacing: 0.08em;
     color: var(--white-color);
     }
+    
+    
 }
 
 .contacts-form__submit-button {
@@ -118,6 +124,12 @@
 
     .contacts-form {
         width: 450px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacts {
+    max-width: 480px;
     }
 }
 
