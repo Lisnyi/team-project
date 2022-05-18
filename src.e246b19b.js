@@ -6,7 +6,9 @@ onload=function(){let e=document.querySelectorAll('input[type="button"][value="R
 $(".slider-for").slick({slidesToShow:1,slidesToScroll:1,arrows:!1,fade:!0,asNavFor:".slider-nav"}),$(".slider-nav").slick({slidesToShow:3,slidesToScroll:1,asNavFor:".slider-for",arrows:!0,dots:!1,centerMode:!0,focusOnSelect:!0});
 },{}],"RSqK":[function(require,module,exports) {
 (()=>{const e={openMenuBtn:document.querySelector("[data-menu-open]"),closeMenuBtn:document.querySelector("[data-menu-close]"),menu:document.querySelector("[data-menu]"),body:document.querySelector("[data-body]")};function n(){e.menu.classList.toggle("is-open"),e.body.classList.toggle("body--overflow")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)})();
+},{}],"WcsN":[function(require,module,exports) {
+(()=>{const o={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]"),body:document.querySelector("[data-body]")};function e(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("body--overflow")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})(),(()=>{const o={openModalBtn:document.querySelector("[data-modal-open-mobile]"),closeModalBtn:document.querySelector("[data-modal-close-mobile]"),modal:document.querySelector("[data-modal]"),body:document.querySelector("[data-body]")};function e(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("body--overflow")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/response"),require("./js/slider"),require("../src/js/modal");
-},{"./sass/main.scss":"clu1","./js/response":"tLxO","./js/slider":"wzuc","../src/js/modal":"RSqK"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project/src.612f801c.js.map
+"use strict";require("./sass/main.scss"),require("./js/response"),require("./js/slider"),require("../src/js/modal"),require("../src/js/modal-window");
+},{"./sass/main.scss":"clu1","./js/response":"tLxO","./js/slider":"wzuc","../src/js/modal":"RSqK","../src/js/modal-window":"WcsN"}]},{},["Focm"], null)
+//# sourceMappingURL=/team-project/src.e246b19b.js.map
