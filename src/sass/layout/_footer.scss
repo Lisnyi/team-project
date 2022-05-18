@@ -74,7 +74,9 @@
 	border-radius: 6px;
 	width: 40px;
 	height: 40px;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 	@media screen and (max-width: 767px) {
 		margin: 0 0;
 	}
@@ -93,8 +95,8 @@
 }
 
 .inst-icon {
-	width: 40px;
-	height: 40px;
+	width: 25px;
+	height: 25px;
 }
 
 .footer-icon {
